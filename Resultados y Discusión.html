@@ -8,10 +8,48 @@
  justificado {
  	text-align: justify;
  }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #c1fc6d;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      text-align: justify;
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+
+    .imagen-centrada {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+    }
 </style>
 </head>
 <body>
-	 <body background="Fondo Resultados.png">
 <center><h1> RESULTADOS Y DISCUSIÓN.</h1></center>
 <br>
 <center><h2>El sistema permite registrar el reciclaje de residuos por kilogramo en tres categorías
@@ -31,3 +69,5 @@ kilogramo de C02 a la atmósfera.
 <br></br>
 Al finalizar el registro de datos, el sistema genera un reporte detallado en PDF que incluye
 los totales de reciclaje por material y el impacto ambiental correspondiente.</h2></center>
+
+<img src="Registro.png" class="imagen-centrada">
