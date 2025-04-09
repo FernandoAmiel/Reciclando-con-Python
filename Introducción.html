@@ -8,11 +8,20 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('fondo-xd.png'); /* Usa el nombre del archivo sin ruta local */
+      background-image: "fondo-xd.png"; /* Usa el nombre del archivo sin ruta local */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* oscurece el fondo para que el texto se lea mejor */
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     h1, h2 {
@@ -39,6 +48,7 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
     <h1>INTRODUCCIÓN</h1>
     <h2>
       En un mundo cada vez más urbanizado y con un ritmo de consumo elevado, la gestión de
